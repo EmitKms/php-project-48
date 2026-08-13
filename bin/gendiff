@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+
+<?php
+
+error_reporting(E_ALL & ~E_DEPRECATED);
+$autoloadFromRoot = __DIR__ . '/../../../autoload.php';
+$autoloadFromVendor = __DIR__ . '/../vendor/autoload.php';
+
+require_once file_exists($autoloadFromRoot) ? $autoloadFromRoot : $autoloadFromVendor;
+
+use App\Differ;
+
+$differ = new Differ();
+echo $differ->run();

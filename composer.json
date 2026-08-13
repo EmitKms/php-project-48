@@ -1,0 +1,28 @@
+{
+    "name": "hexlet/code",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "EmitKms",
+            "email": "adskidkikms@gmail.com"
+        }
+    ],
+    "bin": [
+        "bin/gendiff"
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Differ.php"
+        ]
+    },
+    "require": {
+        "docopt/docopt": "^1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0",
+        "funct/funct": "^1.6"
+    }
+}
